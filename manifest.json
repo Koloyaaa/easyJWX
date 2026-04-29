@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "交我学自动填答案",
+  "version": "1.0",
+  "description": "在交我学试卷页面自动解析并填入填空题答案",
+  "permissions": ["clipboardRead"],
+  "content_scripts": [
+    {
+      "matches": ["https://jwx.sjtus.cn/app/qb/spd*"],
+      "js": ["content.js"]
+    }
+  ]
+}
+
